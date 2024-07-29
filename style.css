@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "poppins",sans-serif;
+}
+
+:root{
+    --big-color:#080808;
+    --second-color:#131313;
+    --text-color:white;
+    --main-color:#00ffee;
+}
+
+
+
+html{
+    font-size: 60%;
+    overflow: hidden;
+}
+
+body{
+    background: var(--big-color);
+    color: var(--text-color);
+}
+
+.header{ 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 4rem 12% 4rem;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+}
+
+.logo{
+    font-size: 3rem;
+    color: var(--text-color);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+.logo span{
+    text-shadow: 0 0 25px var(--main-color);
+}
+
+.navbar a{
+    font-size: 1.8rem;
+        color: var(--text-color);
+        margin-left: 4rem;
+        font-weight: 500;
+        transition: 0.3s ease;
+        border-bottom: 3px solid transparent;
+}
+
+.navbar a:hover,
+.navbar a:active{
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+}
+
+#menu-icon{
+    font-size: 3.6rem;
+    color: var(--main-color);
+    display: none;
+}
+
+
+/* home  */
+
+section{
+    min-height: 100vh;
+    padding: 10rem 12% 10rem;
+    
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15rem;
+
+}
+
+.home-content{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    text-align: left;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+span{
+    color: var(--main-color);
+}
+
+
+
+.logo span{
+    color: var(--main-color);
+}
+
+
+.home-content h3{
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    font-size: 3.5rem;
+
+}
+
+
+.home-content h1{
+    font-size: 7rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    line-height: 1;
+}
+.home-img{
+    border-radius: 50%;
+}
+
+.home-img img{
+position: relative;
+top: 3rem;
+box-shadow: 0 0 25px var(--main-color);
+cursor: pointer;
+transition: 0.4s ease-in-out;
+
+}
+
+.home-img img:hover{
+    box-shadow: 0 0 25px var(--main-color),
+    0 0 50px var(--main-color),
+    0 0 75px var(--main-color);
+}
+
+.home-content p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.8;
+    max-width: 1000px;
+}
+
+
+.social-icons{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    font-size: 3rem;
+    border-radius: 50%;
+    color: var(--main-color);
+    
+    transition: 0.3s ease-in-out;
+    margin-right: 29px;
+}
+.social-icons a i{
+    border-radius: 50%;
+    border: 3px solid var(--text-color);
+    width: 40px;
+
+    
+    margin-top: 20px;
+    font-size: 35px;
+    color: var(--main-color);
+}
+
+
+
+.social-icons a i:hover{
+color: whitesmoke;
+border-radius: 50%;
+/* transform: scale(1.3) translateY(-5px); */
+box-shadow: 0 0 25px var(--main-color);
+border: 3px solid var(--main-color);
+background-color: var(--main-color);
+border: 3px solid var(--main-color);
+
+
+}
+
+.btn{
+    display: inline-flex;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    box-shadow: 0 0 25px var(--main-color);
+    border-radius: 4rem;
+
+    font-size: 1.6rem;
+    color: black;
+    border: 2px solid transparent;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.3rem ease-in-out;
+    cursor: pointer;
+    margin-top: 20px;
+    
+}
+
+
+.btn:hover{
+    box-shadow: 0 0 50px var(--main-color);
+}
+
+
+
+
+.text-animation{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+
+
+/* section education  */
+
+#education{
+    color: aliceblue;
+}
